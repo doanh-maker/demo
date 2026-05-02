@@ -1117,6 +1117,228 @@
         color: #ef4444;
       }
 
+      .action-row {
+        display: flex;
+        gap: 10px;
+        align-items: stretch;
+        margin-bottom: 20px;
+      }
+      .btn-action-main {
+        flex: 1;
+        background: var(--orange);
+        color: white;
+        font-family: inherit;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 14px 10px;
+        border: none;
+        border-radius: 14px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        transition: background 0.15s;
+      }
+      .btn-action-main:hover {
+        background: #e85e2a;
+      }
+
+      .btn-action-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        width: 64px;
+        flex-shrink: 0;
+        background: var(--blue-light);
+        color: var(--blue);
+        border: none;
+        border-radius: 14px;
+        cursor: pointer;
+        font-family: inherit;
+        padding: 10px 6px;
+        transition: background 0.15s;
+      }
+      .btn-action-icon span {
+        font-size: 20px;
+        line-height: 1;
+      }
+      .btn-action-icon small {
+        font-size: 10px;
+        font-weight: 600;
+      }
+      .btn-action-icon:hover {
+        background: #dbeafe;
+      }
+
+      .btn-action-call {
+        background: #dcfce7;
+        color: #15803d;
+      }
+      .btn-action-call:hover {
+        background: #bbf7d0;
+      }
+
+      /* ===== REVIEWS ===== */
+      .reviews-section {
+        margin-top: 20px;
+        border-top: 1px solid var(--gray-border);
+        padding-top: 16px;
+      }
+      .reviews-section h4 {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--text);
+        margin-bottom: 12px;
+      }
+      .rating-summary {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--gray-light);
+        border-radius: 14px;
+        padding: 14px 16px;
+        margin-bottom: 12px;
+      }
+      .rating-score {
+        font-size: 36px;
+        font-weight: 800;
+        color: var(--text);
+        line-height: 1;
+      }
+      .rating-stars-big {
+        font-size: 18px;
+        color: #fbbf24;
+      }
+      .rating-count {
+        font-size: 12px;
+        color: var(--gray);
+        margin-top: 2px;
+      }
+
+      .rating-bars {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 16px;
+      }
+      .rating-bar-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .rating-bar-row > span:first-child {
+        font-size: 11px;
+        color: var(--gray);
+        width: 20px;
+        text-align: right;
+      }
+      .rating-bar-row > span:last-child {
+        font-size: 11px;
+        color: var(--gray);
+        width: 14px;
+      }
+      .bar-track {
+        flex: 1;
+        height: 6px;
+        background: var(--gray-border);
+        border-radius: 3px;
+        overflow: hidden;
+      }
+      .bar-fill {
+        height: 100%;
+        background: #fbbf24;
+        border-radius: 3px;
+      }
+
+      .review-card {
+        background: var(--gray-light);
+        border-radius: 14px;
+        padding: 14px;
+        margin-bottom: 10px;
+      }
+      .review-top {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+      .reviewer-avatar {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+        flex-shrink: 0;
+      }
+      .reviewer-info {
+        flex: 1;
+      }
+      .reviewer-name {
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--text);
+      }
+      .reviewer-date {
+        font-size: 11px;
+        color: var(--gray);
+        margin-top: 1px;
+      }
+      .review-stars {
+        font-size: 13px;
+        color: #fbbf24;
+      }
+      .review-text {
+        font-size: 13px;
+        color: var(--text);
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+      .review-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+      .rtag {
+        font-size: 11px;
+        font-weight: 500;
+        padding: 3px 9px;
+        border-radius: 20px;
+      }
+      .rtag.green {
+        background: var(--green-light);
+        color: #15803d;
+      }
+      .rtag.yellow {
+        background: #fef9c3;
+        color: #854d0e;
+      }
+
+      .btn-see-more {
+        width: 100%;
+        background: none;
+        border: 1.5px solid var(--gray-border);
+        border-radius: 12px;
+        padding: 12px;
+        font-family: inherit;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--blue);
+        cursor: pointer;
+        margin-top: 4px;
+        transition: all 0.15s;
+      }
+      .btn-see-more:hover {
+        background: var(--blue-light);
+        border-color: var(--blue);
+      }
+
       /* ===== TRANSITIONS ===== */
       .screen {
         animation: fadeIn 0.2s ease;
@@ -1420,7 +1642,15 @@
                     <span class="meta-tag">❄️</span>
                     <span class="meta-tag">WiFi</span>
                   </div>
-                  <button class="fav-btn-small">🤍</button>
+                  <button
+                    class="fav-btn-small"
+                    onclick="
+                      event.stopPropagation();
+                      toggleFavCard(this);
+                    "
+                  >
+                    🤍
+                  </button>
                 </div>
               </div>
             </div>
@@ -1437,7 +1667,15 @@
                     <span class="meta-tag">25m²</span
                     ><span class="meta-tag">❄️</span>
                   </div>
-                  <button class="fav-btn-small">🤍</button>
+                  <button
+                    class="fav-btn-small"
+                    onclick="
+                      event.stopPropagation();
+                      toggleFavCard(this);
+                    "
+                  >
+                    🤍
+                  </button>
                 </div>
               </div>
             </div>
@@ -1458,7 +1696,7 @@
                     class="fav-btn-small"
                     onclick="
                       event.stopPropagation();
-                      this.textContent = '❤️';
+                      toggleFavCard(this);
                     "
                   >
                     🤍
@@ -1473,7 +1711,15 @@
                 <div class="loc">Cầu Giấy, Hà Nội</div>
                 <div class="bottom">
                   <div class="meta"><span class="meta-tag">22m²</span></div>
-                  <button class="fav-btn-small">🤍</button>
+                  <button
+                    class="fav-btn-small"
+                    onclick="
+                      event.stopPropagation();
+                      toggleFavCard(this);
+                    "
+                  >
+                    🤍
+                  </button>
                 </div>
               </div>
             </div>
@@ -1591,9 +1837,206 @@
                 <span class="amenity-tag">🅿️ Chỗ để xe</span>
                 <span class="amenity-tag">🪟 Ban công</span>
               </div>
-              <button class="btn-primary" onclick="gotoScreen('booking')">
-                Đặt lịch hẹn
-              </button>
+              <div class="action-row">
+                <button class="btn-action-main" onclick="gotoScreen('booking')">
+                  <span>📅</span> Đặt lịch hẹn
+                </button>
+                <button
+                  class="btn-action-icon"
+                  onclick="gotoScreen('messages')"
+                  title="Nhắn tin"
+                >
+                  <span>💬</span>
+                  <small>Nhắn tin</small>
+                </button>
+                <button
+                  class="btn-action-icon btn-action-call"
+                  onclick="showToast('📞 Đang gọi cho chủ nhà...')"
+                  title="Liên hệ"
+                >
+                  <span>📞</span>
+                  <small>Liên hệ</small>
+                </button>
+              </div>
+
+              <!-- REVIEWS SECTION -->
+              <div class="reviews-section">
+                <div class="reviews-header">
+                  <h4>Đánh giá từ người thuê trước</h4>
+                  <div class="rating-summary">
+                    <span class="rating-score">4.3</span>
+                    <div class="rating-stars-big">
+                      ★★★★<span style="color: #d1d5db">★</span>
+                    </div>
+                    <span class="rating-count">18 đánh giá</span>
+                  </div>
+                  <div class="rating-bars">
+                    <div class="rating-bar-row">
+                      <span>5★</span>
+                      <div class="bar-track">
+                        <div class="bar-fill" style="width: 55%"></div>
+                      </div>
+                      <span>10</span>
+                    </div>
+                    <div class="rating-bar-row">
+                      <span>4★</span>
+                      <div class="bar-track">
+                        <div class="bar-fill" style="width: 28%"></div>
+                      </div>
+                      <span>5</span>
+                    </div>
+                    <div class="rating-bar-row">
+                      <span>3★</span>
+                      <div class="bar-track">
+                        <div class="bar-fill" style="width: 11%"></div>
+                      </div>
+                      <span>2</span>
+                    </div>
+                    <div class="rating-bar-row">
+                      <span>2★</span>
+                      <div class="bar-track">
+                        <div class="bar-fill" style="width: 6%"></div>
+                      </div>
+                      <span>1</span>
+                    </div>
+                    <div class="rating-bar-row">
+                      <span>1★</span>
+                      <div class="bar-track">
+                        <div class="bar-fill" style="width: 0%"></div>
+                      </div>
+                      <span>0</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review-card">
+                  <div class="review-top">
+                    <div
+                      class="reviewer-avatar"
+                      style="
+                        background: linear-gradient(135deg, #60a5fa, #3b82f6);
+                      "
+                    >
+                      T
+                    </div>
+                    <div class="reviewer-info">
+                      <div class="reviewer-name">Trần Minh Quân</div>
+                      <div class="reviewer-date">Đã thuê · Tháng 3/2025</div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                  </div>
+                  <p class="review-text">
+                    Phòng rộng rãi, sạch sẽ, chủ nhà rất nhiệt tình. Điện nước
+                    tính đúng như thông báo, không có phụ phí ẩn. Hàng xóm thân
+                    thiện, khu vực an ninh tốt. Mình ở được 6 tháng rất hài
+                    lòng!
+                  </p>
+                  <div class="review-tags">
+                    <span class="rtag green">✅ Giá hợp lý</span>
+                    <span class="rtag green">✅ Chủ nhà tốt</span>
+                    <span class="rtag green">✅ An ninh tốt</span>
+                  </div>
+                </div>
+
+                <div class="review-card">
+                  <div class="review-top">
+                    <div
+                      class="reviewer-avatar"
+                      style="
+                        background: linear-gradient(135deg, #f472b6, #ec4899);
+                      "
+                    >
+                      L
+                    </div>
+                    <div class="reviewer-info">
+                      <div class="reviewer-name">Lê Thị Hương</div>
+                      <div class="reviewer-date">Đã thuê · Tháng 1/2025</div>
+                    </div>
+                    <div class="review-stars">
+                      ★★★★<span style="color: #d1d5db">★</span>
+                    </div>
+                  </div>
+                  <p class="review-text">
+                    Phòng như hình, ban công thoáng. Gần chợ và siêu thị tiện
+                    mua đồ. Máy lạnh hoạt động tốt. Trừ 1 sao vì thỉnh thoảng
+                    nước hơi yếu vào buổi sáng. Nhìn chung vẫn rất ổn với mức
+                    giá này.
+                  </p>
+                  <div class="review-tags">
+                    <span class="rtag green">✅ Vị trí thuận tiện</span>
+                    <span class="rtag yellow">⚠️ Nước hơi yếu</span>
+                  </div>
+                </div>
+
+                <div class="review-card">
+                  <div class="review-top">
+                    <div
+                      class="reviewer-avatar"
+                      style="
+                        background: linear-gradient(135deg, #34d399, #10b981);
+                      "
+                    >
+                      N
+                    </div>
+                    <div class="reviewer-info">
+                      <div class="reviewer-name">Nguyễn Bảo Long</div>
+                      <div class="reviewer-date">Đã thuê · Tháng 11/2024</div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                  </div>
+                  <p class="review-text">
+                    Mình là sinh viên, tìm được phòng này rất may. Chủ nhà dễ
+                    tính, cho phép nấu ăn, nuôi thú cưng nhỏ. WiFi khá nhanh, đủ
+                    dùng để học online. Sẽ giới thiệu cho bạn bè!
+                  </p>
+                  <div class="review-tags">
+                    <span class="rtag green">✅ Phù hợp sinh viên</span>
+                    <span class="rtag green">✅ Cho nấu ăn</span>
+                    <span class="rtag green">✅ WiFi tốt</span>
+                  </div>
+                </div>
+
+                <div id="moreReviews" style="display: none">
+                  <div class="review-card">
+                    <div class="review-top">
+                      <div
+                        class="reviewer-avatar"
+                        style="
+                          background: linear-gradient(135deg, #fbbf24, #f59e0b);
+                        "
+                      >
+                        P
+                      </div>
+                      <div class="reviewer-info">
+                        <div class="reviewer-name">Phạm Thu Trang</div>
+                        <div class="reviewer-date">Đã thuê · Tháng 9/2024</div>
+                      </div>
+                      <div class="review-stars">
+                        ★★★<span style="color: #d1d5db">★★</span>
+                      </div>
+                    </div>
+                    <p class="review-text">
+                      Phòng ổn, giá vừa phải. Tuy nhiên cầu thang hơi tối, nên
+                      trang bị thêm đèn. Chủ nhà phản hồi khá chậm khi có sự cố.
+                      Phù hợp với người không đòi hỏi nhiều tiện ích.
+                    </p>
+                    <div class="review-tags">
+                      <span class="rtag yellow">⚠️ Cầu thang tối</span>
+                      <span class="rtag yellow">⚠️ Phản hồi chậm</span>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  class="btn-see-more"
+                  id="seeMoreBtn"
+                  onclick="toggleMoreReviews()"
+                >
+                  Xem thêm 15 đánh giá ▾
+                </button>
+              </div>
+
+              <div style="height: 24px"></div>
             </div>
           </div>
         </div>
@@ -2134,7 +2577,23 @@
         btn.classList.add("selected");
       }
 
-      // ===== FAVORITE =====
+      // ===== REVIEWS =====
+      function toggleMoreReviews() {
+        const more = document.getElementById("moreReviews");
+        const btn = document.getElementById("seeMoreBtn");
+        const isHidden = more.style.display === "none";
+        more.style.display = isHidden ? "block" : "none";
+        btn.textContent = isHidden ? "Thu gọn ▴" : "Xem thêm 15 đánh giá ▾";
+      }
+
+      // ===== FAVORITE (card list) =====
+      function toggleFavCard(btn) {
+        const isNowFav = btn.textContent.trim() === "🤍";
+        btn.textContent = isNowFav ? "❤️" : "🤍";
+        showToast(isNowFav ? "❤️ Đã lưu vào yêu thích" : "Đã bỏ yêu thích");
+      }
+
+      // ===== FAVORITE (detail page) =====
       let isFav = false;
       function toggleFav() {
         isFav = !isFav;
